@@ -1,5 +1,5 @@
 # RakTak-Transfert
-Il s'agit d'une application de transfert d'argent, avec Symfony & API platform en Backend et Angular & Ionic en Front.
+Il s'agit d'une application de transfert d'argent (type Wari), avec Symfony & API platform en Backend et Angular & Ionic en Front.
 
 
 ## Processus du projet sous Trello
