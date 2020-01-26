@@ -5,7 +5,7 @@ security:
 
     role_hierarchy:    
         ROLE_ADMIN: ROLE_USER
-        #ROLE_SUPER_ADMIN: [ROLE_ADMIN,ROLE_ALLOWED_TO_SWITCH]
+        ROLE_SUPER_ADMIN: [ROLE_ADMIN,ROLE_ALLOWED_TO_SWITCH]
             
     providers:
         entity_provider:
@@ -26,7 +26,10 @@ security:
                 success_handler: lexik_jwt_authentication.handler.authentication_success
                 failure_handler: lexik_jwt_authentication.handler.authentication_failure
 
-        
+        register:
+            pattern:  ^/register
+            stateless: true
+            anonymous: true
 
         api:
             pattern:  ^/api
