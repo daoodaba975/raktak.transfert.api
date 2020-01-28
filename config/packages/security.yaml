@@ -1,7 +1,7 @@
 security:
     encoders:
         App\Entity\User:
-            algorithm: bcrypt
+            algorithm: auto
 
     role_hierarchy:    
         ROLE_ADMIN: ROLE_USER
@@ -17,6 +17,7 @@ security:
         dev:
             pattern: ^/(_(profiler|wdt)|css|images|js)/
             security: false
+
         login:
             pattern:  ^/login
             stateless: true
@@ -25,7 +26,7 @@ security:
                 check_path: /login_check
                 success_handler: lexik_jwt_authentication.handler.authentication_success
                 failure_handler: lexik_jwt_authentication.handler.authentication_failure
-
+        
         register:
             pattern:  ^/register
             stateless: true

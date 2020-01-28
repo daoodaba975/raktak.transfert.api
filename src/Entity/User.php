@@ -10,7 +10,7 @@ use Symfony\Component\Security\Core\User\UserInterface;
  * @ApiResource()
  * @ORM\Entity(repositoryClass="App\Repository\UserRepository")
  */
-class User implements UserInterface
+class User implements AdvancedUserInterface
 {
     /**
      * @ORM\Id()
@@ -60,6 +60,11 @@ class User implements UserInterface
      */
     private $role;
 
+    public function isEnable()
+    {
+        return $this->IsActive;
+    }
+
     public function __construct()
     {
         $this->IsActive = true;
@@ -94,7 +99,6 @@ class User implements UserInterface
     {
         $roles = $this->roles;
         // guarantee every user at least has ROLE_USER
-        $roles[] = 'ROLE_USER';
 
         return array_unique($roles);
     }
