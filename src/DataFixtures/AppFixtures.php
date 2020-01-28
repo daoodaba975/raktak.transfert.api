@@ -2,6 +2,7 @@
 
 namespace App\DataFixtures;
 
+use ApiPlatform\Core\Annotation\ApiResource;
 use App\Entity\Role;
 use App\Entity\User;
 use Doctrine\Bundle\FixturesBundle\Fixture;
