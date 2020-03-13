@@ -16,4 +16,3 @@ Il s'agit d'une application de transfert d'argent (type Wari), avec Symfony & AP
 
 
 ## Déploiement
-1. 
