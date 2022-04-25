@@ -1,11 +1,6 @@
 # RakTak-Transfert
 🔩 It is a money transfer application (like Wari), with Symfony & API Platform in Backend and Angular 9 & Flutter in FrontEnd.
 
-
-## Process Trello
-[**VOIR**](https://trello.com/b/CAxsYujY/raktak-transfert)
-
-
 ## Technos
 ![php version](https://img.shields.io/badge/PHP-7.1.3-blue)
 ![angular version](https://img.shields.io/badge/Angular-9.0.2-red) <br>
